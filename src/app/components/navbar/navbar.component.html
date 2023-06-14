@@ -1,0 +1,31 @@
+<!-- <mat-toolbar color="primary">
+    <a [routerLink]="'/'"
+        mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu_keys</mat-icon>
+    </a>
+    <span>Prestamo de llaves</span>
+    <span class="example-spacer"></span>
+    <a [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        Cerrar Sesion
+    </a>
+    <a [routerLink]="'/singup'" mat-icon-button class="example-icon favorite-icon mr20 ml70" aria-label="Example icon-button with heart icon">
+        Registrar Usuario
+    </a>
+</mat-toolbar> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand mx-2" [routerLink]="'/'"><mat-icon>home</mat-icon></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="'/singup'">Registrar Usuario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Cerrar Sesion</a>
+        </li>
+      </ul>
+    </div>
+</nav>
